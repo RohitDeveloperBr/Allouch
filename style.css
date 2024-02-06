@@ -16,6 +16,7 @@ body {
 
 .top {
   padding-top: 5px;
+  padding: 0 03% 0 03%;
   width: 100%;
   background-color: #ff9966;
 }
@@ -30,6 +31,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .top-col-1 h1 {
@@ -46,8 +48,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
+
+
+
+@media only screen and (max-width: 700px) {
+  .top-col-1 h1 {
+  text-align: center;
+  }
+
+  .top-col-2 {
+    margin: 0 auto;
+  }
+
+
+}
+
+
 
 /* ///////////////////////// */
 
@@ -56,6 +75,8 @@ body {
   background-color: #f5f3ea;
   padding-top: 7px;
   padding-bottom: 7px;
+  padding: 0 03% 0 03%;
+
 }
 
 .main-header {
@@ -114,11 +135,22 @@ body {
   transition: 0.5s;
 }
 
-a:hover {
-  box-shadow: 2px 2px 1px 1px rgba(175, 15, 15, 0.795);
+
+.header-btn:hover {
+  box-shadow: 3px 3px 4px 2px rgba(175, 15, 15, 0.795);
+  border-radius: 8px;
 }
 
 /* //////////////////// */
+
+
+
+
+
+
+
+
+
 
 .home {
   padding-top: 160px;
@@ -651,8 +683,8 @@ div#YouTube {
 
 .vector {
   position: absolute;
-  right: -15px;
-  bottom: -87px;
+  right: -91px;
+  bottom: -95px;
 }
 
 /* ////////////////////////////////////////////////// */
