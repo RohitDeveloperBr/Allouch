@@ -3,7 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
     <link rel="stylesheet" href="style.css" />
+    <script src="./main.js" defer></script>
     <title>Allouch</title>
   </head>
   <body>
@@ -167,27 +183,23 @@
           </div>
 
           <div class="main-tabs">
-            <div class="tabs-title">
-              <nav>
-                <ul>
-                  <li class="active">Newsletters</li>
-                  <li>YouTube</li>
-                  <li>Instagram/TikTok</li>
-                  <li>Twitter/LinkedIn</li>
-                  <li>Media Companies</li>
-                  <li>Podcasts</li>
-                </ul>
-              </nav>
+            <div class="tab">
+              <button class="tablinks active" onclick="openCity(event, 'Newsletters')">Newsletters</button>
+              <button class="tablinks" onclick="openCity(event, 'YouTube')">YouTube</button>
+              <button class="tablinks" onclick="openCity(event, 'Instagram/TikTok')">Instagram/TikTok</button>
+              <button class="tablinks" onclick="openCity(event, 'Twitter/LinkedIn')">Twitter/LinkedIn</button>
+              <button class="tablinks" onclick="openCity(event, 'Media-Companies')">Media Companies</button>
+              <button class="tablinks" onclick="openCity(event, 'Podcasts')">Podcasts</button>
             </div>
-
-            <div class="tabs-content">
+        
+            <div id="Newsletters" class="tabcontent">
               <div class="tab-Character">
                 <img src="./Images/Character 1.png" alt="" />
               </div>
-
+    
               <div class="tabs-box">
                 <img src="./Images/Vector (9).png" alt="" class="vector" />
-
+    
                 <div class="tabs-points">
                   <div class="point-1">
                     <div>
@@ -204,7 +216,7 @@
                       </p>
                     </div>
                   </div>
-
+    
                   <div class="point-2">
                     <div>
                       <img src="./Images/icon2.svg" alt="" />
@@ -219,7 +231,7 @@
                       </p>
                     </div>
                   </div>
-
+    
                   <div class="point-3">
                     <div>
                       <img src="./Images/icon3.svg" alt="" />
@@ -233,26 +245,101 @@
                     </div>
                   </div>
                 </div>
-
+    
                 <div class="tabs-images">
                   <div class="tab-img1">
                     <img src="./Images/tab-img1.png" alt="" />
                   </div>
-
+    
                   <div class="tab-img1">
                     <img src="./Images/tab-img2.png" alt="" />
                   </div>
-
+    
                   <div class="tab-img1">
                     <img src="./Images/tab-img3.png" alt="" />
                   </div>
-
+    
                   <div class="tab-img1">
                     <img src="./Images/tab-img4.png" alt="" />
                   </div>
                 </div>
               </div>
             </div>
+        
+            <div id="YouTube" class="tabcontent">
+              <!-- <div class="tab-Character">
+                <img src="./Images/Character 1.png" alt="" />
+              </div>
+     -->
+              <div class="tabs-box">
+                <img src="./Images/Vector (9).png" alt="" class="vector" />
+    
+                <div class="tabs-points">
+                  <div class="point-1">
+                    <div>
+                      <img src="./Images/icon1.svg" alt="" />
+                    </div>
+                    <div>
+                      <h2>
+                        Get sponsored in your sleep with your self-serve
+                        storefront
+                      </h2>
+                      <p>
+                        Create slots to get ad requests streamlined to your
+                        publish dates
+                      </p>
+                    </div>
+                  </div>
+    
+                  <div class="point-2">
+                    <div>
+                      <img src="./Images/icon2.svg" alt="" />
+                    </div>
+                    <div>
+                      <h2>
+                        Deliver extraordinary sponsor experiences - in less time
+                      </h2>
+                      <p>
+                        Message, collaborate, and get paid in a dynamic collab
+                        flow
+                      </p>
+                    </div>
+                  </div>
+    
+                  <div class="point-3">
+                    <div>
+                      <img src="./Images/icon3.svg" alt="" />
+                    </div>
+                    <div>
+                      <h2>Manage and grow your newsletter ad business</h2>
+                      <p>
+                        Track your sponsorship and earnings - boosted by our
+                        Partner Network
+                      </p>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="tabs-images">
+                  <div class="tab-img1">
+                    <img src="./Images/tab-img1.png" alt="" />
+                  </div>
+    
+                  <div class="tab-img1">
+                    <img src="./Images/tab-img2.png" alt="" />
+                  </div>
+    
+                  <div class="tab-img1">
+                    <img src="./Images/tab-img3.png" alt="" />
+                  </div>
+    
+                  <div class="tab-img1">
+                    <img src="./Images/tab-img4.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+        
           </div>
         </div>
       </div>
@@ -609,7 +696,7 @@
 
           <div class="count-content">
             <div class="count-numbers">
-              <h1>$1,230,881</h1>
+              <h1>$</h1><h1 class="count">1230881</h1>
             </div>
             <div>
               <p>
@@ -634,44 +721,101 @@
           </div>
 
           <div class="testimonials-content">
-            <div class="testimonials-content-1">
-              <div>
-                <img src="./Images/stars2.png" alt="" />
-              </div>
-              <div>
-                <h2>
-                  “Me and hundreds of creators I know can benefit from
-                  Influencer's Marketing personal storefront for products and
-                  <br />sponsorships.”
-                </h2>
-              </div>
-              <div class="testimonials-div3">
-                <div class="div3-content">
-                  <h3>Alex Smith</h3>
-                  <p>
-                    Youtuber, Podcaster and Writer, Founder of Part-Time
-                    YouTuber Academy
-                  </p>
-                  <a href="#">View storefront</a>
-                </div>
-
-                <div class="div3-arrow">
-                  <img src="./Images/test-arrow1.png" alt="" />
-                  <img src="./Images/test-arrow2.png" alt="" />
-                </div>
-              </div>
+         
+    <div class="owl-carousel owl-theme">
+      <div class="testimonials-content">
+          <div class="testimonials-content-1">
+            <div>
+              <img src="./Images/stars2.png" alt="" />
             </div>
+            <div>
+              <h2>
+                “Me and hundreds of creators I know can benefit from
+                Influencer's Marketing personal storefront for products and
+                <br />sponsorships.”
+              </h2>
+            </div>
+            <div class="testimonials-div3">
+              <div class="div3-content">
+                <h3>Alex Smith</h3>
+                <p>
+                  Youtuber, Podcaster and Writer, Founder of Part-Time
+                  YouTuber Academy
+                </p>
+                <a href="#">View storefront</a>
+              </div>
 
-            <div class="testimonials-content-2">
-              <img src="./Images/men2.png" alt="" />
             </div>
           </div>
 
-          <div class="dots">
-            <img src="./Images/dot1.png" alt="" />
-            <img src="./Images/dot2.png" alt="" />
-            <img src="./Images/dot2.png" alt="" />
+          <div class="testimonials-content-2">
+            <img src="./Images/men2.png" alt="" />
           </div>
+        </div>
+        <div class="testimonials-content">
+          <div class="testimonials-content-1">
+            <div>
+              <img src="./Images/stars2.png" alt="" />
+            </div>
+            <div>
+              <h2>
+                “Me and hundreds of creators I know can benefit from
+                Influencer's Marketing personal storefront for products and
+                <br />sponsorships.”
+              </h2>
+            </div>
+            <div class="testimonials-div3">
+              <div class="div3-content">
+                <h3>Alex Smith</h3>
+                <p>
+                  Youtuber, Podcaster and Writer, Founder of Part-Time
+                  YouTuber Academy
+                </p>
+                <a href="#">View storefront</a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="testimonials-content-2">
+            <img src="./Images/men2.png" alt="" />
+          </div>
+        </div>
+        <div class="testimonials-content">
+          <div class="testimonials-content-1">
+            <div>
+              <img src="./Images/stars2.png" alt="" />
+            </div>
+            <div>
+              <h2>
+                “Me and hundreds of creators I know can benefit from
+                Influencer's Marketing personal storefront for products and
+                <br />sponsorships.”
+              </h2>
+            </div>
+            <div class="testimonials-div3">
+              <div class="div3-content">
+                <h3>Alex Smith</h3>
+                <p>
+                  Youtuber, Podcaster and Writer, Founder of Part-Time
+                  YouTuber Academy
+                </p>
+                <a href="#">View storefront</a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="testimonials-content-2">
+            <img src="./Images/men2.png" alt="" />
+          </div>
+        </div>
+  
+  </div>
+
+          </div>
+
+
         </div>
       </div>
     </section>
@@ -688,32 +832,28 @@
             </div>
           </div>
           <div class="FAQs-2">
-            <div class="accordian">
-              <div class="accordian-1">
-                <div>
-                  <img src="./Images/bar.svg" alt="" />
-                </div>
-                <h2>Dummy Data</h2>
+            <div class="main-accordian">
+
+              <button class="accordion accordion1"><img src="./images/bar.svg" alt="">Dummy Data</button>
+              <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
-              <div class="accordian-1">
-                <div>
-                  <img src="./Images/bar.svg" alt="" />
-                </div>
-                <h2>Dummy Data</h2>
+              <button class="accordion accordion2"><img src="./images/bar.svg" alt="">Dummy Data</button>
+              <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
-              <div class="accordian-1">
-                <div>
-                  <img src="./Images/bar.svg" alt="" />
-                </div>
-                <h2>Dummy Data</h2>
+              
+              <button class="accordion accordion3"><img src="./images/bar.svg" alt="">Dummy Data</button>
+              <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
-              <div class="accordian-4">
-                <div>
-                  <img src="./Images/bar.svg" alt="" />
-                </div>
-                <h2>Dummy Data</h2>
+              
+              <button class="accordion accordion4"><img src="./images/bar.svg" alt="">Dummy Data</button>
+              <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
-            </div>
+              
+              </div>
           </div>
         </div>
       </div>
@@ -781,5 +921,43 @@
         </div>
       </div>
     </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        center: true,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
