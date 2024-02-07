@@ -250,6 +250,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   margin-top: -125px;
   gap: 30px;
 }
@@ -363,6 +364,44 @@ div#YouTube {
   font-weight: 300;
 }
 
+
+
+
+@media only screen and (max-width: 1710px) {
+
+  .home-content {
+
+    margin-top: 0px;
+
+  }
+
+  .created {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+
+
+}
+
+@media only screen and (max-width: 880px) {
+
+  .home-para {
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  
+.created .created-2 {
+  width: 100%;
+}
+
+
+
+}
+
+
 /* //////////////////////// */
 
 .star {
@@ -431,6 +470,55 @@ div#YouTube {
   width: 19px;
   height: 27px;
   margin-top: 8px;
+}
+
+/*  */
+@media only screen and (max-width: 1710px) {
+
+  .star-container {
+    width: 100%;
+  }
+
+  .star .crousel img{
+   width: 100%;
+  }
+  
+  
+  .video-inp {
+    width: 50%;
+  }
+  
+
+
+}
+
+@media only screen and (max-width: 992px) {
+
+  .video-inp {
+    width: 60%;
+  }
+
+
+
+}
+@media only screen and (max-width: 880px) {
+
+  .home-para {
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  
+.created .created-2 {
+  width: 100%;
+}
+
+.video-inp {
+  width: 90%;
+}
+
+
 }
 
 /* ////////////////////////////// */
@@ -569,6 +657,10 @@ div#YouTube {
   bottom: -84px;
 } */
 
+
+
+
+/* //////////////////// */
 .tab {
   font-family: "DM Sans", sans-serif;
   font-size: 18px;
@@ -579,6 +671,7 @@ div#YouTube {
   display: flex;
   justify-content: center;
   gap: 15px;
+  padding: 0 03% 0 03%;
 }
 .tab button {
   list-style: none;
